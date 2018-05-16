@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">饭友App</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_regist">RegistActivity</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_active_show">ActiveShowActivity</string>
+    <string name="title_activity_actmanage">ActmanageActivity</string>
+    <string name="title_activity_createact">CreateactActivity</string>
+    <string name="title_activity_actchange">ActchangeActivity</string>
+    <string name="title_activity_act_change_item">ActChangeItemActivity</string>
+    <string name="title_activity_comment">CommentActivity</string>
+    <string name="title_activity_comment_item">CommentItemActivity</string>
+    <string name="title_activity_find_friend">FindFriendActivity</string>
+
+</resources>

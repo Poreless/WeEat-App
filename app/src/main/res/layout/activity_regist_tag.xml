@@ -1,0 +1,50 @@
+<com.client.weeat.ui.FlowLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:background="#FFFFFF" >
+
+    <TextView
+        style="@style/text_flag_01"
+        android:background="@drawable/flag_04"
+        android:text="小吃街"
+        android:textColor="#323232" />
+
+    <TextView
+        style="@style/text_flag_01"
+        android:background="@drawable/flag_04"
+        android:text="AA"
+        android:textColor="#323232" />
+
+    <TextView
+        style="@style/text_flag_01"
+        android:background="@drawable/flag_04"
+        android:text="读书会"
+        android:textColor="#323232" />
+
+    <TextView
+        style="@style/text_flag_01"
+        android:background="@drawable/flag_04"
+        android:text="烧烤"
+        android:textColor="#323232" />
+
+    <TextView
+        style="@style/text_flag_01"
+        android:background="@drawable/flag_04"
+        android:text="温州大学"
+        android:textColor="#323232" />
+
+    <TextView
+        style="@style/text_flag_01"
+        android:background="@drawable/flag_04"
+        android:text="努力ing"
+        android:textColor="#323232" />
+
+    <TextView
+        style="@style/text_flag_01"
+        android:background="@drawable/flag_04"
+        android:text="I thick i can"
+        android:textColor="#323232" />
+
+</com.client.weeat.ui.FlowLayout>

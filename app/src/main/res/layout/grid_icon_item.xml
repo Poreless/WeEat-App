@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:background="#fff"
+              android:gravity="center"
+
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">  <!--这里设置边界线-->
+        <RelativeLayout
+            android:id="@+id/rl_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="4dp"
+            android:gravity="center">
+            <!--这里设置图像层叠-->
+            <ImageView
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/iconmonstr_squa"/>
+
+            <ImageView
+                android:id="@+id/iv_icon_user"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_callserver_unpressed"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">  <!--这里设置边界线-->
+    <TextView
+        android:id="@+id/icon_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_icon"
+        android:layout_gravity="center"
+        android:textSize="5dp"
+        android:text="名字"/>
+    </LinearLayout>
+
+
+</LinearLayout>

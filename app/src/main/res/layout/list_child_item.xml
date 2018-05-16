@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="#fff"
+              android:gravity="center"
+
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/linearlayout_underline">  <!--这里设置边界线-->
+        <RelativeLayout
+            android:id="@+id/rl_act_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="4dp">
+            <!--这里设置图像层叠-->
+            <ImageView
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/iconmonstr_squa"/>
+            <ImageView
+                android:id="@+id/user_comment_url"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_callserver_unpressed"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/user_comment_username"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/rl_act_icon"
+            android:text="名字"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/linearlayout_underline">  <!--这里设置边界线-->
+        <TextView
+            android:id="@+id/user_comment_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rec_textview"
+            android:text="评论:"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/linearlayout_underline">  <!--这里设置边界线-->
+        <TextView
+            android:id="@+id/user_comment_starnum"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:text="综合评星:"/>
+        <TextView
+            android:id="@+id/user_comment_time"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="时间:"/>
+    </LinearLayout>
+
+</LinearLayout>

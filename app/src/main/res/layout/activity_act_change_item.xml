@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/et_register_form"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!--标题栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/ib_active_change_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_bar_left_back" />
+
+        <TextView
+            android:id="@+id/tv_actchange_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="活动管理"
+            android:textColor="#564c4c"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/ib_active_change_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_more" />
+
+    </LinearLayout>
+    <!--分割-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeee" />
+    <!--FrameLayout-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1">
+
+        <!--线性布局-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp">
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="标题:"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_actchange_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="请输入活动标题"
+                android:textColor="#5c5c5c"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:listDivider" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp">
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="主题:"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_actchange_theme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="请选择合适的主题"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#5c5c5c"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:listDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp">
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="描述:"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_actchange_artdcl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="请详细描述这次活动"
+                android:textColor="#5c5c5c"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:listDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp">
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="时间:"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tx_actchange_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="点此选择时间"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:listDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp">
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="请选择地点:"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_actadd_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="选择地点"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#5c5c5c"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:listDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp">
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="设置人数:"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="120dp"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:onClick="iv_3"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/opera_del"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tv_actchange_maxnum"
+                        android:paddingTop="1dp"
+                        android:paddingBottom="1dp"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"
+                        android:text="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:onClick="iv_4"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/opera_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+
+
+        <!--线性布局-->
+        <LinearLayout
+            android:id="@+id/ll_actives_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#fff">
+
+            <Button
+                android:id="@+id/btn_actchange_up"
+                android:layout_width="120dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:text="提交修改"
+                android:background="@color/lite_blue"
+                android:textColor="#fff" />
+
+
+            <Button
+                android:id="@+id/btn_actchange_finish"
+                android:layout_width="120dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+
+                android:background="@color/black_de"
+                android:text="结束活动"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
+
+
+
+

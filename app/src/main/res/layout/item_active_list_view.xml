@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:background="#fff"
+              android:gravity="center"
+
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/linearlayout_underline">  <!--这里设置边界线-->
+        <RelativeLayout
+            android:id="@+id/lv_rl_act_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="4dp">
+            <!--这里设置图像层叠-->
+            <ImageView
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/iconmonstr_squa"/>
+            <ImageView
+                android:id="@+id/lv_iv_user"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_callserver_unpressed"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/lv_tv_username"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/rl_act_icon"
+            android:text="名字"/>
+
+
+        <TextView
+            android:id="@+id/lv_tv_actplace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="地点"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lv_tv_actname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:lines="2"
+        android:padding="10dp"
+        android:text="活动描述--活动描述--活动描述--活动描述--活动描述"
+        android:textColor="#000" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/linearlayout_underline">
+        <TextView
+            android:id="@+id/lv_tv_acttheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="3dp"
+            android:text="主题"
+            />
+        <TextView
+            android:id="@+id/lv_tv_actnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_actnum"
+            android:text="人数 5 人"/>
+        <TextView
+            android:id="@+id/lv_tv_startime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            android:layout_marginTop="3dp"
+            android:gravity="end"
+            android:textSize="10dp"
+            android:text="时间"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="?android:listDivider" />
+
+</LinearLayout>

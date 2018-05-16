@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeee"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_me"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/simple_bg"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/rl_me_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/iconmonstr_squa"/>
+
+                    <ImageView
+                        android:id="@+id/iv_me_icon"
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/my_user_default"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_me_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/rl_me_icon">
+                    <TextView
+                        android:id="@+id/tv_me_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_me_icon"
+                        android:layout_gravity="center"
+                        android:text="尚未登录，请点击头像登录"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/msg_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:radius="10dp"
+                    android:drawableLeft="@drawable/iconmonstr_pen"
+                    android:gravity="center"
+                    android:text="修改资料"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/ll_me_name"
+                    android:layout_centerHorizontal="true"/>
+
+
+            </RelativeLayout>
+           <!-- 设置布局间隔-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="?android:listDivider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@null">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/biaoqian" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="兴趣标签"
+                    android:textColor="#000" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="?android:listDivider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@null">
+
+                <GridView
+                    android:id="@+id/gv_favorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:numColumns="5"></GridView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pingjia" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="我的评价"
+                    android:textColor="#000" />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="?android:listDivider"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <ExpandableListView
+                    android:id="@+id/expand_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <ImageButton
+        android:id="@+id/ib_init"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/init"
+        android:visibility="visible" />
+
+</RelativeLayout>
